@@ -1,0 +1,65 @@
+.founder-section {
+    padding: 60px 20px;
+    background-color: #f4eef8;
+    color: #3a1e4f;
+}
+
+.founder-container {
+    display: grid;
+    grid-template-columns: 1fr 1.2fr;
+    align-items: center;
+    max-width: 1200px;
+    margin: auto;
+    gap: 40px;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(143, 80, 160, 0.15);
+}
+
+.founder-image img {
+    width: 100%;
+    height: auto;
+    border-radius: 16px;
+    object-fit: cover;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+}
+
+.founder-content h3 {
+    font-size: 28px;
+    color: #733e86;
+    margin-bottom: 20px;
+}
+
+.founder-content p {
+    font-size: 17px;
+    line-height: 1.8;
+    color: #6c3c80;
+    margin-bottom: 25px;
+}
+
+.social-icons a {
+    font-size: 20px;
+    color: #8f50a0;
+    margin-right: 15px;
+    transition: color 0.3s ease;
+}
+
+.social-icons a:hover {
+    color: #733e86;
+}
+@media (max-width: 768px) {
+  .founder-container {
+    grid-template-columns: 1fr; /* Stack items vertically */
+    text-align: center;         /* Optional: center the text for better mobile layout */
+  }
+
+  .founder-image {
+    order: -1; /* Ensures image appears before the content even if markup is ordered differently */
+  }
+
+  .founder-content h3 {
+    margin-top: 20px; /* Adds some space between image and title */
+  }
+  
+}

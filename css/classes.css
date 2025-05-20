@@ -1,0 +1,149 @@
+.Baking_Classes {
+    background-color: #fdf7f9;
+    padding: 60px 20px;
+    color: #333;
+}
+
+.section-title {
+    text-align: center;
+    color: #8f50a0;
+    font-size: 2.3rem;
+    margin-bottom: 10px;
+}
+
+.section-subtitle {
+    text-align: center;
+    color: #1b82dc;
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+}
+
+/* Class Intro Section */
+.class-section, .curriculum-section {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+    justify-content: center;
+    align-items: flex-start;
+    margin-bottom: 50px;
+}
+
+.class-img img {
+    max-width: 200px;
+    width: 100%;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+.class-text, .curriculum-text {
+    max-width: 600px;
+    line-height: 1.6;
+    font-size: 1rem;
+}
+
+/* Curriculum Table */
+.curriculum-table {
+    min-width: 300px;
+    max-width: 500px;
+}
+
+.curriculum {
+    width: 100%;
+    background: #fff;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 0 5px rgba(0,0,0,0.1);
+    border-collapse: collapse;
+}
+
+.curriculum th {
+    background-color: #8f50a0;
+    color: #fff;
+    padding: 14px;
+    font-size: 1.1rem;
+    text-align: left;
+}
+
+.curriculum td {
+    padding: 12px 18px;
+    position: relative;
+    color: #333;
+    transition: background-color 0.3s ease;
+}
+
+.curriculum tr:hover td {
+    background-color: #f0e7f5;
+}
+
+.tick {
+    color: #ebe404;
+    margin-right: 10px;
+    font-weight: bold;
+}
+
+/* Enroll Form */
+.enroll-form form {
+    max-width: 600px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.enroll-form input,
+.enroll-form select,
+.enroll-form textarea {
+    padding: 12px;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    outline: none;
+}
+
+.enroll-form button {
+    padding: 12px;
+    background-color: #8f50a0;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.enroll-form button:hover {
+    background-color: #1b82dc;
+}
+
+.Class-gallery{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin-bottom: 40px;
+}
+
+.Class-gallery img {
+    width: 200px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+}
+
+.curriculum-gallery {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin-bottom: 40px;
+}
+
+.curriculum-gallery img {
+    width: 200px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+}
+

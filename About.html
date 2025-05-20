@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <title>Gemisquare Bakeries</title>
+    <link rel="stylesheet" href="css/Main_Styles.css">
+    <link rel="stylesheet" href="css/About.css">
+</head>
+<body>
+    <!-- Navbar Start --->
+    <header>
+    <div class="nav-container">
+        <div class="logo">
+        <img src="img/logo.png" alt="logo" />
+        </div>
+
+        <!-- Checkbox hack -->
+        <input type="checkbox" id="toggle" class="toggle-checkbox" />
+        <label for="toggle" class="burger" id="burger">
+        <i class='bx bx-menu'></i>
+        </label>
+
+        <nav class="navbar">
+        <ul>
+            <li><a href="index.html" >Home</a></li>
+            <li><a href="About.html" class="active">About</a></li>
+            <li class="dropdown">
+            <a href="#">Services <i class="fas fa-caret-down"></i></a>
+            <div class="dropdown-content">
+                <a href="Bakery.html">Bakery Delights</a>
+                <a href="Classes.html">Baking Classes</a>
+            </div>
+            </li>
+            <li><a href="Gallery.html">Gallery</a></li>
+            <li><a href="Contact.html" id="Contact">Contact</a></li>
+        </ul>
+        </nav>
+
+        <div class="navbar-line"></div>
+    </div>
+    </header>
+   <!--- Navbar End -->
+
+    <!--Start Landing Page-->
+    <div class="landingPage">
+        <img src="img/Landing1.png" alt="Bakery Background">
+        <h2>About Us</h2>
+        <p><a href="index.html">Home</a> &gt; About Us</p>
+    </div>
+    <!--End Landing Page-->
+
+    <!--ABOUT START-->
+    <div class="About">
+        <h2>About Us</h2>
+        <h4>Welcome to Gemisquare Bakeries</h4>
+        <div class="About_Content">
+            <div class="About_txt">
+                <p>
+                    At <strong>Gemisquare Bakeries</strong>, we bake more than just bread — we bake joy, comfort, and community into every bite. Proudly rooted in South Africa, our journey began with a simple idea: to create a neighborhood bakery where tradition meets passion, and where every product tells a story of love, care, and quality.
+                    <br><br>
+                    From soft, golden loaves to mouth-watering pastries and custom-made cakes, our range is crafted with only the finest locally sourced ingredients. Each item that leaves our ovens is a result of time-honored techniques, a touch of innovation, and a deep commitment to freshness.
+                    <br><br>
+                    Beyond just serving delicious baked goods, we are passionate about sharing our skills with the community. That’s why we proudly offer hands-on <strong>baking classes</strong> for both beginners and enthusiasts. Whether you're looking to master the basics or explore new baking techniques, our classes are designed to inspire creativity and confidence in the kitchen.
+                    <br><br>
+                    Whether you're stopping by for your daily bread, ordering something special for a celebration, or learning to bake with us — Gemisquare Bakeries is here to serve you with heart. Come in and experience the sweet taste of quality, passion, and South African pride.
+                </p>
+            </div>
+            
+            <div class="About_img">
+                <img src="img/About1.png" alt="" id="About1">
+                <img src="img/About2.png" alt="" id="About2">
+                <img src="img/About3.png" alt="" id="About3">
+                <img src="img/About4.png" alt="" id="About4">
+            </div>
+        </div>
+         <!-- Experience & Award Section -->
+         <div class="experience_award">
+            <div class="award_box">
+                <i class='bx bx-award'></i>
+                <h3 class="counter" data-target="5">0</h3>
+                <p>Years of Experience</p>
+            </div>
+            <div class="award_box">
+                <i class='bx bx-user-voice'></i>
+                <h3 class="counter" data-target="10">0</h3>
+                <p>Skilled Professionals</p>
+            </div>
+            <div class="award_box">
+                <i class='bx bx-baguette'></i>
+                <h3 class="counter" data-target="500">0</h3>
+                <p>Total Products Per Day</p>
+            </div>
+            <div class="award_box">
+                <i class='bx bx-cart'></i>
+                <h3 class="counter" data-target="300">0</h3>
+                <p>Orders Per Day</p>
+            </div>
+        </div>
+
+        <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            const counters = document.querySelectorAll('.counter');
+        
+            counters.forEach(counter => {
+                const updateCount = () => {
+                    const target = +counter.getAttribute('data-target');
+                    const count = +counter.innerText;
+        
+                    // Adjust this for speed
+                    const increment = target / 100;
+        
+                    if (count < target) {
+                        counter.innerText = Math.ceil(count + increment);
+                        setTimeout(updateCount, 30);
+                    } else {
+                        counter.innerText = target + (target === 5 || target === 10 ? '+' : '+');
+                    }
+                };
+        
+                updateCount();
+            });
+        });
+        
+        </script>
+    </div>
+    <!--ABOUT END-->
+
+    <!-- Our Goals Start -->
+    <div class="Goals">
+        <h2>Mission, Vision and Objectives</h2>
+        <h4>Empowering Excellence with Purpose</h4>
+
+        <div class="Goals_Row">
+            <div class="Goals_Box">
+                <i class="fas fa-bullseye goal-icon"></i>
+                <h3>Mission</h3>
+                <p>
+                    To provide exceptional services that drive value, growth, and sustainable impact for our clients and communities.
+                </p>
+            </div>
+
+            <div class="Goals_Box">
+                <i class="fas fa-eye goal-icon"></i>
+                <h3>Vision</h3>
+                <p>
+                    To become a leading force of innovation and trust, setting new standards across every industry we serve.
+                </p>
+            </div>
+
+            <div class="Goals_Box">
+                <i class="fas fa-list-check goal-icon"></i>
+                <h3>Objectives</h3>
+                <ul>
+                    <li>Deliver quality services.</li>
+                    <li>Grow with integrity.</li>
+                    <li>Promote innovation.</li>
+                    <li>Empower our people.</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <!-- Our Blogs Start -->
+    <div class="Blogs">
+        <h2>Our Blogs</h2>
+        <h4>Latest insights, events, and community stories</h4>
+        
+        <!-- Blog 1 -->
+        <div class="blog-post blog-left">
+            <img src="/img/blog1.png" alt="Enterprise and Supplier Development Event">
+            <div class="blog-text">
+                <h3>Enterprise and Supplier Development Event – Sponsored by Absa</h3>
+                <p>We recently had the privilege of being invited to the Enterprise and Supplier Development event proudly sponsored by Absa Bank. This gathering brought together entrepreneurs, business owners, and key stakeholders from various industries, creating a platform for invaluable learning and collaboration.</p>
+                <p>The event focused on the role of financial institutions in empowering small businesses through training, mentorship, and funding opportunities. Representatives from Absa shared insights on their support programs, access to credit, and development initiatives aimed at enhancing sustainability for emerging enterprises.</p>
+                <p>One of the highlights of the event was the keynote presentation on supply chain integration, which emphasized how small businesses can strategically position themselves to supply large corporations. The content was both enlightening and motivational, reaffirming our commitment to growth and excellence.</p>
+                <p>Networking opportunities were abundant, and we engaged with fellow entrepreneurs who shared their journeys, challenges, and aspirations. These interactions were not only informative but also inspiring, fostering a sense of community and shared ambition.</p>
+                <p>We are grateful to Absa for recognizing the importance of nurturing businesses like ours and for inviting us to be part of such a meaningful initiative. Events like these serve as stepping stones toward long-term partnerships and sustainable development.</p>
+            </div>
+        </div>
+
+        <!-- Blog 2 -->
+        <div class="blog-post blog-right">
+            <img src="/img/blog2.png" alt="TEA Event Sponsored by Nedbank">
+            <div class="blog-text">
+                <h3>Township Entrepreneurs Alliance (TEA) – Sponsored by Nedbank</h3>
+                <p>We were honored to attend the Township Entrepreneurs Alliance (TEA) event, generously sponsored by Nedbank. This initiative is designed to ignite economic activity in township areas by connecting local entrepreneurs with resources and opportunities they might not otherwise access.</p>
+                <p>From the very start, the energy in the room was electric. Entrepreneurs from various sectors gathered to share ideas, seek mentorship, and showcase their innovations. The presence of Nedbank as a sponsor underscored the importance of financial literacy and business support in underdeveloped regions.</p>
+                <p>Among the standout sessions was a panel discussion on building resilient businesses in unpredictable economic climates. Experienced entrepreneurs offered practical strategies on pivoting operations and staying competitive through technology, customer service, and strategic partnerships.</p>
+                <p>As a small business, the TEA event was both eye-opening and empowering. We walked away with actionable insights and new contacts that could be instrumental in our next phase of growth. The experience reaffirmed our belief that township businesses are vital contributors to the national economy.</p>
+                <p>Our gratitude goes to Nedbank and the TEA team for allowing us to witness and be part of a movement that truly uplifts the entrepreneurial spirit. We look forward to applying what we learned and continuing to grow with purpose.</p>
+            </div>
+        </div>
+
+        <!-- Blog 3 -->
+        <div class="blog-post blog-left">
+            <img src="/img/blog3.png" alt="Community Involvement and Giving Back">
+            <div class="blog-text">
+                <h3>Community First: Giving Back as a Small Business</h3>
+                <p>As a small business, our roots are deeply embedded in the community that supports us. That’s why giving back is not just a gesture, but a core part of our mission. Whether it’s donating time, resources, or skills, we believe in making a difference where it matters most.</p>
+                <p>Over the past few months, we’ve participated in several outreach initiatives, including food drives, youth mentorship programs, and local clean-up campaigns. These efforts, while small in scale, have had a meaningful impact on the lives of those around us.</p>
+                <p>One of our most fulfilling moments came during a youth skills workshop, where we offered basic digital literacy training to students from underserved schools. Watching them engage and gain confidence reminded us of why we started our journey—to create value and uplift others.</p>
+                <p>Giving back also strengthens our team. It fosters compassion, unity, and a sense of purpose beyond business targets. When we come together for a cause, we grow stronger not just as colleagues, but as community members.</p>
+                <p>We remain committed to supporting and uplifting the community that nurtures us. Together, we can build a future where every contribution—no matter how small—sparks lasting change.</p>
+            </div>
+        </div>
+    </div>
+    <!-- Our Blogs End -->
+    <!-- Meet Our Team Start -->
+    <div class="staff">
+        <h1>Meet Our Team</h1>
+        <h4>Passionate bakers and instructors bringing sweet smiles to your day.</h4>
+
+        <div class="staff-container">
+            <div class="staff-member">
+                <img src="img/user.jpg" alt="Zanele Mhlongo">
+                <h3>Zanele Mhlongo</h3>
+                <p>Founder & Head Baker</p>
+                <a href="about.html"><button class="read-more-btn">Read More</button></a>
+            </div>
+            <div class="staff-member">
+                <img src="img/user.jpg" alt="Sipho Dlamini">
+                <h3>Sipho Dlamini</h3>
+                <p>Bakery Manager</p>
+            </div>
+            <div class="staff-member">
+                <img src="img/user.jpg" alt="Lerato Khumalo">
+                <h3>Lerato Khumalo</h3>
+                <p>Pastry Specialist</p>
+            </div>
+            <div class="staff-member">
+                <img src="img/user.jpg" alt="Thabo Nxumalo">
+                <h3>Thabo Nxumalo</h3>
+                <p>Baking Instructor</p>
+            </div>
+            <div class="staff-member">
+                <img src="img/user.jpg" alt="Ayanda Mthethwa">
+                <h3>Ayanda Mthethwa</h3>
+                <p>Customer Service</p>
+            </div>
+            <div class="staff-member">
+                <img src="img/user.jpg" alt="Nokuthula Cele">
+                <h3>Nokuthula Cele</h3>
+                <p>Decorating & Design</p>
+            </div>
+        </div>
+    </div>
+    <!-- Meet Our Team End -->
+
+    <!-- Footer Section Start-->
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-about">
+                <img src="img/logo.png" alt="Siphalaphala Salon Logo">
+                <p>
+                    Gemisquare Bakeries is your go-to spot for fresh, delicious baked goods. From daily bread to custom cakes, we serve quality and flavor in every bite.
+                </p>
+            </div>
+
+            <div class="footer-links">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="About.html">About</a></li>
+                    <li><a href="Classes.html">Baking Classes</a></li>
+                    <li><a href="Bakery.html">Bakery Delights</a></li>
+                    <li><a href="Gallery.html">Gallery</a></li>
+                    <li><a href="Contact.html">Contact</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-contact">
+                <h3>Contact Us</h3>
+                <p><i class="fas fa-map-marker-alt"></i> 2292 Nunu Mbambo Road,Umlazi</p>
+                <p><i class="fas fa-phone"></i> 060 967 2363</p>
+                <p><i class="fas fa-envelope"></i> GemisquareBakeries.co.za</p>
+            </div>
+
+            <div class="footer-social">
+                <h3>Follow Us</h3>
+                <a href="https://web.facebook.com/profile.php?id=100057523265902" target="_blank"><i class="fab fa-facebook"></i></a>
+                <a href="http://tiktok.com/@gemisquarebakery" target="_blank"><i class="fab fa-tiktok"></i></a>
+                <a href="https://www.instagram.com/gemisquarebakeries/" target="_blank"><i class="fab fa-instagram"></i></a>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p>&copy; <span id="year"></span> Gemisquare Bakeries | All Rights Reserved.</p>
+            <p id="design">Designed by ZH Madlala</p>
+        </div>
+        
+        <a href="#" class="back-to-top">
+            <i class="fas fa-arrow-up"></i>
+        </a>
+        <script>
+                  // Show/hide back-to-top button on scroll
+        const backToTopButton = document.querySelector(".back-to-top");
+
+        window.addEventListener("scroll", () => {
+            if (window.scrollY > 300) {
+            backToTopButton.style.display = "block";
+            } else {
+            backToTopButton.style.display = "none";
+            }
+        });
+
+    // Scroll to top on click
+    backToTopButton.addEventListener("click", (e) => {
+        e.preventDefault();
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+    });
+            window.addEventListener('scroll', function () {
+                const header = document.querySelector('header');
+                header.classList.toggle('scrolled', window.scrollY > 50);
+            });
+            // Set current year
+            document.getElementById("year").textContent = new Date().getFullYear();
+        </script>
+    </footer>
+    <!-- Footer Section End-->  
+
+<script src="js/Main_js.js"></script> 
+   
+</body>
+</html>

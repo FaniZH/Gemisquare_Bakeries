@@ -1,0 +1,153 @@
+.landingPage {
+    position: relative;
+    text-align: center;
+    color: white;
+    overflow: hidden;
+}
+
+.landingPage::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.5));
+    z-index: 1;
+}
+
+.landingPage img {
+    width: 100%;
+    height: 300px; /* Adjust this based on your design preferences */
+    object-fit: cover;
+}
+
+.landingPage h2,
+.landingPage p {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 2; /* Makes sure text appears above the dark overlay */
+}
+
+.landingPage h2 {
+    top: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 2.5rem; /* You can adjust the font size as needed */
+    font-weight: bold;
+}
+
+.landingPage p {
+    top: 70%;
+    font-size: 1rem;
+}
+
+.landingPage a {
+    color: #8f50a0;
+    text-decoration: none;
+}
+
+.Goals {
+    background-image: linear-gradient(rgba(143, 80, 160, 0.8), rgba(0, 0, 0, 0.7)), url("/img/Why_us.png");
+    background-size: cover;
+    background-position: center;
+    padding: 60px 20px;
+    color: #fff;
+    text-align: center;
+}
+
+.Goals_Row {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+    flex-wrap: wrap;
+    margin-top: 40px;
+}
+
+.Goals_Box {
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 12px;
+    padding: 25px;
+    flex: 1;
+    min-width: 280px;
+    max-width: 32%;
+    text-align: center;
+    transition: transform 0.3s;
+}
+
+.Goals_Box:hover {
+    transform: translateY(-5px);
+}
+
+.Goals_Box img {
+    width: 60px;
+    height: 60px;
+    margin-bottom: 15px;
+}
+
+.Goals_Box h3 {
+    font-size: 22px;
+    margin-bottom: 10px;
+    color: #ffe5ff;
+}
+
+.Goals_Box p,
+.Goals_Box ul {
+    font-size: 15px;
+    line-height: 1.6;
+}
+
+.Goals_Box ul {
+    list-style-type: disc;
+    padding-left: 20px;
+    text-align: left;
+}
+
+.goal-icon {
+    font-size: 50px;
+    margin-bottom: 15px;
+    color: #fff;
+}
+
+
+/********************************************BLogs*************************************************************************/
+.Blogs {
+    background: linear-gradient(to bottom, #8f50a0, #1b82dc);
+    padding: 60px 20px;
+    text-align: center;
+    color: #fff;
+}
+
+.blog-post {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    margin: 60px 0;
+    padding: 20px;
+    background-color: rgba(255,255,255,0.1);
+    border: 3px solid  #ffffff;
+    border-radius: 10px;
+}
+
+.blog-post img {
+    max-width: 500px;
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    flex: 1;
+    margin: 10px;
+}
+
+.blog-text {
+    flex: 1;
+    padding: 20px;
+    text-align: left;
+}
+
+.blog-left {
+    flex-direction: row;
+}
+
+.blog-right {
+    flex-direction: row-reverse;
+}

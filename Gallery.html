@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <title>Gemisquare Bakeries</title>
+    <link rel="stylesheet" href="css/Main_Styles.css">
+    <link rel="stylesheet" href="css/About.css">
+    <link rel="stylesheet" href="css/classes.css">
+    <link rel="stylesheet" href="css/baker.css">
+    <link rel="stylesheet" href="css/Gallery.css">
+</head>
+<body>
+<!-- Navbar Start --->
+    <header>
+    <div class="nav-container">
+        <div class="logo">
+        <img src="img/logo.png" alt="logo" />
+        </div>
+
+        <!-- Checkbox hack -->
+        <input type="checkbox" id="toggle" class="toggle-checkbox" />
+        <label for="toggle" class="burger" id="burger">
+        <i class='bx bx-menu'></i>
+        </label>
+
+        <nav class="navbar">
+        <ul>
+            <li><a href="index.html" >Home</a></li>
+            <li><a href="About.html">About</a></li>
+            <li class="dropdown">
+            <a href="#">Services <i class="fas fa-caret-down"></i></a>
+            <div class="dropdown-content">
+                <a href="Bakery.html">Bakery Delights</a>
+                <a href="Classes.html">Baking Classes</a>
+            </div>
+            </li>
+            <li><a href="Gallery.html" class="active">Gallery</a></li>
+            <li><a href="Contact.html" id="Contact" >Contact</a></li>
+        </ul>
+        </nav>
+
+        <div class="navbar-line"></div>
+    </div>
+    </header>
+    <!--- Navbar End -->
+
+    <!--Start Landing Page-->
+    <div class="landingPage">
+        <img src="img/Landing3.png" alt="Bakery Background">
+        <h2>Our Gallery</h2>
+        <p><a href="index.html">Home</a> &gt; Our Gallery</p>
+    </div>
+    <!--End Landing Page-->
+
+    <!-- Gallery Start -->
+    <section class="gallery-section">
+    <h2 class="gallery-title">Our Gallery</h2>
+
+    <div class="menu-tabs">
+        <button class="tab active" data-category="Bakery">🍞 <b>Bakery Catalog</b></button>
+        <button class="tab" data-category="Luxe_Range">🎂 <b>Baking Classes Catalog</b></button>
+    </div>
+
+    <div class="gallery-content">
+        <!-- Bakery Catalog -->
+        <div class="tab-content active" id="Bakery">
+        <h3 class="category-title">Bread</h3>
+        <div class="image-grid">
+            <img src="img/Landing1.png" alt="Bread 1">
+            <img src="img/Landing1.png" alt="Bread 2">
+            <img src="img/Landing1.png" alt="Bread 3">
+            <img src="img/Landing1.png" alt="Bread 4">
+            <img src="img/Landing1.png" alt="Bread 5">
+        </div>
+
+        <h3 class="category-title">Cakes</h3>
+        <div class="image-grid">
+            <img src="img/Landing2.png" alt="Cake 1">
+            <img src="img/Landing2.png" alt="Cake 2">
+            <img src="img/Landing2.png" alt="Cake 3">
+        </div>
+
+        <h3 class="category-title">Sweet Treat Goodies</h3>
+        <div class="image-grid">
+            <img src="img/Landing3.png" alt="Treat 1">
+            <img src="img/Landing3.png" alt="Treat 2">
+            <img src="img/Landing3.png" alt="Treat 3">
+        </div>
+        </div>
+
+        <!-- Baking Classes Catalog -->
+        <div class="tab-content" id="Luxe_Range">
+        <h3 class="category-title">Classes</h3>
+        <div class="image-grid">
+            <img src="img/cla1.png" alt="Class 1">
+            <img src="img/cla2.png" alt="Class 2">
+            <img src="img/cla3.png" alt="Class 3">
+        </div>
+
+        <h3 class="category-title">Passed Students</h3>
+        <div class="image-grid">
+            <img src="img/stu1.png" alt="Student 1">
+            <img src="img/stu2.png" alt="Student 2">
+            <img src="img/stu3.png" alt="Student 3">
+        </div>
+        </div>
+    </div>
+
+        <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const tabs = document.querySelectorAll(".tab");
+            const tabContents = document.querySelectorAll(".tab-content");
+
+            tabs.forEach((tab) => {
+            tab.addEventListener("click", () => {
+                // Remove active class from all tabs
+                tabs.forEach((btn) => btn.classList.remove("active"));
+                // Add active class to clicked tab
+                tab.classList.add("active");
+
+                const targetId = tab.getAttribute("data-category");
+
+                // Show corresponding content and hide others
+                tabContents.forEach((content) => {
+                if (content.id === targetId) {
+                    content.classList.add("active");
+                } else {
+                    content.classList.remove("active");
+                }
+                });
+            });
+            });
+        });
+        </script>
+
+    </section>
+    <!-- Gallery End -->
+
+    <!--Certificate Start-->
+    <section class="certificate-full-section slide-up">
+    <div class="certificate-wrapper">
+        <h2>Our Certificate</h2>
+        <p class="certificate-description">
+        At Gemisquare Bakeries, we celebrate every student's success with a beautifully designed certificate. It represents their dedication, effort, and growth throughout our baking classes. With a professional look and feel, it’s a proud takeaway for every aspiring baker.
+        </p>
+        <div class="certificate-image-wrapper">
+        <img src="img/cert.png" alt="Gemisquare Certificate">
+        </div>
+    </div>
+    </section>
+    <!--Certificate End-->
+
+    <!-- Footer Section Start-->
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-about">
+                <img src="img/logo.png" alt="Siphalaphala Salon Logo">
+                <p>
+                    Gemisquare Bakeries is your go-to spot for fresh, delicious baked goods. From daily bread to custom cakes, we serve quality and flavor in every bite.
+                </p>
+            </div>
+
+            <div class="footer-links">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="About.html">About</a></li>
+                    <li><a href="Classes.html">Baking Classes</a></li>
+                    <li><a href="Bakery.html">Bakery Delights</a></li>
+                    <li><a href="Gallery.html">Gallery</a></li>
+                    <li><a href="Contact.html">Contact</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-contact">
+                <h3>Contact Us</h3>
+                <p><i class="fas fa-map-marker-alt"></i> 2292 Nunu Mbambo Road,Umlazi</p>
+                <p><i class="fas fa-phone"></i> 060 967 2363</p>
+                <p><i class="fas fa-envelope"></i> GemisquareBakeries.co.za</p>
+            </div>
+
+            <div class="footer-social">
+                <h3>Follow Us</h3>
+                <a href="https://web.facebook.com/profile.php?id=100057523265902" target="_blank"><i class="fab fa-facebook"></i></a>
+                <a href="http://tiktok.com/@gemisquarebakery" target="_blank"><i class="fab fa-tiktok"></i></a>
+                <a href="https://www.instagram.com/gemisquarebakeries/" target="_blank"><i class="fab fa-instagram"></i></a>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p>&copy; <span id="year"></span> Gemisquare Bakeries | All Rights Reserved.</p>
+            <p id="design">Designed by ZH Madlala</p>
+        </div>
+        
+        <a href="#" class="back-to-top">
+            <i class="fas fa-arrow-up"></i>
+        </a>
+        <script>
+                  // Show/hide back-to-top button on scroll
+        const backToTopButton = document.querySelector(".back-to-top");
+
+        window.addEventListener("scroll", () => {
+            if (window.scrollY > 300) {
+            backToTopButton.style.display = "block";
+            } else {
+            backToTopButton.style.display = "none";
+            }
+        });
+
+    // Scroll to top on click
+    backToTopButton.addEventListener("click", (e) => {
+        e.preventDefault();
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+    });
+            window.addEventListener('scroll', function () {
+                const header = document.querySelector('header');
+                header.classList.toggle('scrolled', window.scrollY > 50);
+            });
+            // Set current year
+            document.getElementById("year").textContent = new Date().getFullYear();
+        </script>
+    </footer>
+    <!-- Footer Section End-->   
+
+<script src="/js/Main_js.js"></script> 
+   
+</body>
+</html>

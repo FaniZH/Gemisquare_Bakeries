@@ -1,0 +1,101 @@
+.Bakery_Delights {
+    background-color: #f9f4f1;
+    padding: 60px 20px;
+    color: #333;
+}
+
+.section-title, .section-subtitle {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.section-title {
+    color: #8f50a0;
+    font-size: 2.2rem;
+}
+
+.section-subtitle {
+    color: #1b82dc;
+    font-size: 1.3rem;
+}
+
+.bread-section {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+    margin: 40px auto;
+    padding: 20px;
+    max-width: 1200px;
+    justify-content: center;
+}
+
+.bread-img img {
+    width: 100%;
+    max-width: 500px;
+    border-radius: 12px;
+    margin-top: 70px;
+}
+
+.bread-text {
+    flex: 1;
+    min-width: 300px;
+    max-width: 600px;
+}
+
+.bread-text p {
+    margin-bottom: 15px;
+    line-height: 1.6;
+}
+
+.ingredients-table {
+    width: 100%;
+    margin-top: 20px;
+    border-collapse: collapse;
+    background-color: #fff;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 0 5px rgba(0,0,0,0.05);
+}
+
+.ingredients-table th {
+    background-color: #8f50a0;
+    color: #fff;
+    padding: 14px;
+    font-size: 1.1rem;
+    text-align: left;
+}
+
+.ingredients-table td {
+    padding: 12px 18px;
+    font-size: 1rem;
+    color: #333;
+    position: relative;
+    transition: background-color 0.3s ease;
+}
+
+.ingredients-table tr:hover td {
+    background-color: #f3e8f5;
+}
+
+.ingredients-table .tick {
+    color: #ebe404;
+    margin-right: 10px;
+    font-weight: bold;
+}
+
+.bread-gallery{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin-bottom: 40px;
+}
+
+.bread-gallery img {
+    width: 200px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+}
+
